@@ -4,9 +4,11 @@
   <strong>Name:</strong>
   <%= @list.name %>
 </h1>
-<% for @task in @list.tasks %>
-   <ul><li><%= @task.content %></li></ul>
- <% end %>
+<ol>
+	<% for @task in @list.tasks %>
+	<li><%= @task.content %></li>
+	 <% end %>
+</ol>
 
 
 
